@@ -1,63 +1,77 @@
-# PolyGlotSpeak
-# 🌍 Polyglot Speak
-### Multilingual Voice & Text Translation App using AWS Translate + Polly
+<p align="center">
+<img src="https://github.com/srinivasulabhaskarprabhat-pixel/PolyGlotSpeak/blob/main/a3a346f1-3f03-4065-830e-b4b5f77f60b8.png?raw=true" width="1000">
+</p>
 
-![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
-![HTML](https://img.shields.io/badge/Frontend-HTML%20CSS%20JS-blue)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+<h1 align="center">🌍 Polyglot Speak</h1>
+<h3 align="center">
+Multilingual Voice & Text Translation using AWS Translate + Polly
+</h3>
+
+<p align="center">
+<img src="https://img.shields.io/badge/AWS-Cloud-orange">
+<img src="https://img.shields.io/badge/HTML-CSS%20JS-blue">
+<img src="https://img.shields.io/badge/Project-Completed-brightgreen">
+<img src="https://img.shields.io/badge/Voice-Enabled-purple">
+</p>
+
+---
 
 ## 🚀 Overview
-Polyglot Speak is a multilingual web application that enables users to:
 
-- Translate text between multiple languages  
-- Convert speech to text using microphone input  
-- Listen to translated output using natural voices  
-- Perform voice-assisted multilingual communication in real time  
+Polyglot Speak is a multilingual web application that enables users to communicate across languages using both text and voice.
 
-This project integrates **Amazon Translate**, **Amazon Polly**, and **Web Speech API** to build an interactive voice translation platform.
+The platform combines **Amazon Translate**, **Amazon Polly**, and **Web Speech API** to provide:
+
+- Real-time multilingual text translation  
+- Speech-to-text voice input  
+- Natural text-to-speech output  
+- Interactive voice-enabled communication  
+
+This project helps break language barriers through cloud-powered translation.
 
 ---
 
 ## ✨ Features
 
-✅ Text Translation between multiple languages  
-✅ Voice Input (Speech-to-Text)  
-✅ Text-to-Speech using Amazon Polly  
-✅ Source and Target Language Selection  
-✅ Input and Output Audio Playback  
-✅ Responsive Modern User Interface  
-✅ Supports Voice-assisted Translation  
+✔ Text Translation between multiple languages  
+✔ Voice Input using Microphone  
+✔ Speech Synthesis using Amazon Polly  
+✔ Source and Target Language Selection  
+✔ Input and Output Audio Playback  
+✔ Modern Responsive UI  
+✔ Voice-assisted Translation  
+✔ Cloud-powered Language Processing
 
 ---
 
 ## 🏗 Architecture
 
 ```text
-User Input (Text/Voice)
+User Voice / Text Input
         |
         v
-+------------------+
-| Frontend (UI)    |
-| HTML/CSS/JS      |
-+------------------+
++-------------------+
+| Frontend Interface|
+| HTML CSS JS       |
++-------------------+
         |
         v
-+------------------+
-| AWS Translate    |
-| Language Convert |
-+------------------+
++-------------------+
+| AWS Translate     |
+| Translation API   |
++-------------------+
         |
 Translated Text
         |
         v
-+------------------+
-| AWS Polly        |
-| Speech Synthesis |
-+------------------+
++-------------------+
+| AWS Polly         |
+| Text to Speech    |
++-------------------+
         |
 Audio Output
         v
-User Receives Translation
+User Hears Translation
 ```
 
 ---
@@ -65,16 +79,16 @@ User Receives Translation
 ## 🛠 Tech Stack
 
 ### Frontend
-- HTML5  
-- CSS3  
-- JavaScript  
+- HTML5
+- CSS3
+- JavaScript
 
 ### AWS Services
-- Amazon Translate  
-- Amazon Polly  
-- AWS SDK for JavaScript  
+- Amazon Translate
+- Amazon Polly
+- AWS SDK for JavaScript
 
-### Additional APIs
+### APIs
 - Web Speech API
 
 ---
@@ -82,14 +96,14 @@ User Receives Translation
 ## 📂 Project Structure
 
 ```bash
-polyglot-speak/
+PolyglotSpeak/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 ├── assets/
 │   ├── logo.png
-│   ├── mic.png
+│   ├── microphone.png
 │
 └── README.md
 ```
@@ -98,45 +112,54 @@ polyglot-speak/
 
 ## ⚙️ How It Works
 
-1. User enters or speaks text.
-2. Input text is sent to **AWS Translate**.
-3. Translation is returned in selected target language.
-4. **Amazon Polly** converts translated text into speech.
-5. User can listen to both input and translated output.
+### Step 1
+User types or speaks input.
+
+### Step 2
+Text is sent to AWS Translate.
+
+### Step 3
+Translated response is generated.
+
+### Step 4
+Amazon Polly converts translation into speech.
+
+### Step 5
+User can listen to translated audio output.
 
 ---
 
 ## 🎤 Supported Languages
 
-- English  
-- German  
-- Spanish  
-- French  
-- Portuguese  
-- Korean  
-- Hindi  
-- Telugu  
-- Tamil  
-- Dutch  
+- English
+- German
+- Spanish
+- French
+- Portuguese
+- Korean
+- Hindi
+- Telugu
+- Tamil
+- Dutch
 
-*(Can be extended further.)*
+And more can be added.
 
 ---
 
-## 🔧 Setup Instructions
+## 🔧 Installation
 
-### Clone Repository
+Clone repository:
 
 ```bash
-git clone https://github.com/yourusername/polyglot-speak.git
-cd polyglot-speak
+git clone https://github.com/srinivasulabhaskarprabhat-pixel/PolyGlotSpeak.git
+cd PolyGlotSpeak
 ```
 
 ---
 
 ## Configure AWS Credentials
 
-Update credentials in script:
+Update:
 
 ```javascript
 AWS.config.credentials = new AWS.Credentials(
@@ -145,11 +168,12 @@ AWS.config.credentials = new AWS.Credentials(
 );
 ```
 
-> ⚠ For production use IAM roles or Cognito instead of exposing keys.
+⚠ Never expose credentials in production.
+Use IAM roles or Cognito.
 
 ---
 
-## Run Project
+## ▶ Run Project
 
 Open:
 
@@ -161,46 +185,59 @@ in browser.
 
 ---
 
-## 📸 UI Preview
+## 📸 User Interface
 
-- Modern multilingual dashboard  
-- Voice-enabled translator  
-- Glassmorphism UI  
-- Responsive design
+Features a modern dashboard including:
 
----
-
-## 🔮 Future Enhancements
-
-- Auto language detection  
-- Translation history  
-- Chat-style translator interface  
-- Download translated audio  
-- AI conversation translator  
-- Real-time multilingual chatbot
+- Language selectors
+- Voice input microphone
+- Translation panel
+- Speech playback controls
+- Responsive glassmorphism UI
 
 ---
 
 ## 💡 Use Cases
 
-- Language learning  
-- Travel communication  
-- Accessibility support  
-- Cross-language conversations  
-- Educational applications
+- Language Learning
+- Travel Communication
+- Accessibility Support
+- Cross-language Conversations
+- Educational Applications
 
 ---
 
-## 📖 Learning Outcomes
+## 🔮 Future Enhancements
 
-Through this project I gained experience in:
+- Auto Language Detection  
+- Translation History  
+- Download Audio  
+- Chat-style Translator  
+- AI Conversation Translator  
+- Real-time Multilingual Chatbot
 
-- AWS Cloud Services Integration  
-- Translation APIs  
-- Speech Synthesis  
-- Voice-enabled Web Applications  
-- Frontend Development  
-- Cloud-based Application Design
+---
+
+## 📚 Learning Outcomes
+
+This project helped in gaining experience with:
+
+- AWS Cloud Services
+- API Integrations
+- Speech Processing
+- Translation Systems
+- Frontend Development
+- Cloud Architecture
+
+---
+
+## 📷 Project Preview
+
+Architecture and UI Preview:
+
+<p align="center">
+<img src="https://github.com/srinivasulabhaskarprabhat-pixel/PolyGlotSpeak/blob/main/a3a346f1-3f03-4065-830e-b4b5f77f60b8.png?raw=true" width="1000">
+</p>
 
 ---
 
@@ -208,14 +245,24 @@ Through this project I gained experience in:
 
 **Bhaskara Prabhat Srinivasula**
 
-LinkedIn: www.linkedin.com/in/bhaskara-prabhat-srinivasula-96b7a32b6  
-GitHub: https://github.com/BhaskarPrabhat
+📧 s.bhaskarprabhat@gmail.com  
+
+GitHub:  
+https://github.com/BhaskarPrabhat
+
+LinkedIn:  
+https://www.linkedin.com/in/bhaskara-prabhat-srinivasula-96b7a32b6
 
 ---
 
-## ⭐ If you like this project
-Give this repository a star!
+## ⭐ Support
+
+If you like this project:
+
+Give it a ⭐ on GitHub
 
 ---
 
-### Break Language Barriers, Speak to the World 🌎
+<h2 align="center">
+🌎 Break Language Barriers — Speak To The World
+</h2>
