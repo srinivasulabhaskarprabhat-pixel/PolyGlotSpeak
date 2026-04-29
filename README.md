@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/srinivasulabhaskarprabhat-pixel/PolyGlotSpeak/blob/main/a3a346f1-3f03-4065-830e-b4b5f77f60b8.png?raw=true" width="1000">
+<img src="https://github.com/srinivasulabhaskarprabhat-pixel/PolyGlotSpeak/blob/main/poly.png" width="1000">
 </p>
 
 <h1 align="center">🌍 Polyglot Speak</h1>
